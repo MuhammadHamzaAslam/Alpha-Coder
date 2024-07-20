@@ -1,84 +1,89 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
 * {
     font-family: 'Poppins', sans-serif;
 }
 body{
-  background-color: black;
+  background-color: rgb(0, 0, 0);
+}
+/* navbar start */
+.navbar{
+  background-color: rgb(0, 0, 0) !important;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+  z-index: 99999;
+}
+.navbar-brand{
+  display: flex;
+  align-items: center;
+  color: white !important;
+  font-weight: bold;
+  font-size: 25px;
 }
 .nav-link{
   color: white !important;
-}
-ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-.nav-container{
-  background-color: black;
-}
-.li {
-    padding: 10px;
-    color: white;
-}
-.nav-btn {
-  width: 10em;
-  position: relative;
-  height: 3.5em;
-  border: 3px ridge #149CEA;
-  outline: none;
-  background-color: transparent;
-  color: white;
-  transition: 1s;
-  border-radius: 0.3em;
-  font-size: 16px;
   font-weight: bold;
-  cursor: pointer;
+  border-radius: 10px;
+  padding: 8px;
+  transition: all 0.3s;
 }
-
-.nav-btn::after {
-  content: "";
-  position: absolute;
-  top: -10px;
-  left: 3%;
-  width: 95%;
-  height: 40%;
-  background-color: black;
-  transition: 0.5s;
-  transform-origin: center;
+.nav-link:hover{
+  /* background-color: #323232; */
+  background-color: #00a2ff;
+  transition: all 0.3s;
 }
-.nav-btn::before {
-  content: "";
-  transform-origin: center;
-  position: absolute;
-  top: 80%;
-  left: 3%;
-  width: 95%;
-  height: 40%;
-  background-color: black;
-  transition: 0.5s;
-}
-.nav-btn:hover::before, .nav-btn:hover::after {
-  transform: scale(0)
-}
-.nav-btn:hover {
-  box-shadow: inset 0px 0px 25px #1479EA;
-}
-#main{
-  background-color: black;
+.nav-Ul{
   display: flex;
-  justify-content: center;
-  align-items: center;
+  gap: 40px;
+}
+.nav-Ul .nav-item{
+  font-size: 18px;
+}
+/* navbar end */
+/* navbar button start */
+.navbtns-container{
+  background-color: #000000;
+  padding: 17px;
+  border-bottom: 2px solid #00a2ff;
+  border-top: 2px solid #00a2ff;
+  position: sticky;
+  top: 14.8%;
+  z-index: 99999;
+}
+.nav-btnsDiv{
+  display: flex;
+  justify-content: space-between;
+}
+.nav-btn{
+   background-color: black;
+   color: white;
+   border: 2px solid #00a2ff;
+   border-radius: 10px;
+   padding: 11px;
+   transition: all 0.5s;
+}
+.nav-btn:hover{
+  color:  #12d8fb;
+  box-shadow: 0px 0px 9px #00d9ff;
+  border: 2px solid #00d9ff;
+  transition: all 0.5s;
+}
+/* navbar button end */
+/* animated Section start */
+#animateSecDiv img{
+  width: 100%;
+  height: 68vh;
+  opacity: 0.8;
+}
+.animateSecText{
+  position: absolute;
+  top: 34%;
+  left:25%;
 }
 .text{
   color: white;
   padding-top: 120px;
 }
-
 #description{
   color: white;
   text-align: center;
@@ -90,7 +95,7 @@ h1 {
   font-weight: 600;
 }
 h1 span {
-  color: #7234fa;
+  color: #ffffff;
   position: relative;
 }
 h1 span::before {
@@ -110,49 +115,9 @@ h1 span.stop-blinking::before {
 @keyframes blink {
   50% { opacity: 0 }
 }
-
 #typeEffect{
   color: #dddbce;
   text-align: left;
-}
-#home {
-  font-size: 16px;
-  color: #e1e1e1;
-  font-family: inherit;
-  font-weight: 800;
-  cursor: pointer;
-  position: relative;
-  border: none;
-  background: none;
-  text-transform: uppercase;
-  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-  transition-duration: 400ms;
-  transition-property: color;
-}
-
-#home:focus,
-#home:hover {
-  color: #fff;
-}
-
-#home:focus:after,
-#home:hover:after {
-  width: 100%;
-  left: 0%;
-}
-
-#home:after {
-  content: "";
-  pointer-events: none;
-  bottom: -2px;
-  left: 50%;
-  position: absolute;
-  width: 0%;
-  height: 2px;
-  background-color: #fff;
-  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-  transition-duration: 400ms;
-  transition-property: width, left;
 }
 .Btn {
   width: 140px;
@@ -174,7 +139,7 @@ h1 span.stop-blinking::before {
 
 .Btn::before {
   position: absolute;
-  content: "SUBSCRIBE";
+  content: "Alpha Coders";
   color: #ffd277;
   display: flex;
   align-items: center;
@@ -200,3 +165,8 @@ h1 span.stop-blinking::before {
 .Btn:active {
   transform: scale(0.95);
 }
+/* animated Section end */
+
+/* our services styling start */
+
+/* our services styling end */
