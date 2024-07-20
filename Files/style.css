@@ -25,7 +25,7 @@ ul {
     padding: 10px;
     color: white;
 }
-button {
+.nav-btn {
   width: 10em;
   position: relative;
   height: 3.5em;
@@ -40,7 +40,7 @@ button {
   cursor: pointer;
 }
 
-button::after {
+.nav-btn::after {
   content: "";
   position: absolute;
   top: -10px;
@@ -51,7 +51,7 @@ button::after {
   transition: 0.5s;
   transform-origin: center;
 }
-button::before {
+.nav-btn::before {
   content: "";
   transform-origin: center;
   position: absolute;
@@ -62,14 +62,17 @@ button::before {
   background-color: black;
   transition: 0.5s;
 }
-button:hover::before, button:hover::after {
+.nav-btn:hover::before, .nav-btn:hover::after {
   transform: scale(0)
 }
-button:hover {
+.nav-btn:hover {
   box-shadow: inset 0px 0px 25px #1479EA;
 }
 #main{
   background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .text{
   color: white;
@@ -111,4 +114,89 @@ h1 span.stop-blinking::before {
 #typeEffect{
   color: #dddbce;
   text-align: left;
+}
+#home {
+  font-size: 16px;
+  color: #e1e1e1;
+  font-family: inherit;
+  font-weight: 800;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+}
+
+#home:focus,
+#home:hover {
+  color: #fff;
+}
+
+#home:focus:after,
+#home:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+#home:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #fff;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
+.Btn {
+  width: 140px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(to right,#77530a,#ffd277,#77530a,#77530a,#ffd277,#77530a);
+  background-size: 250%;
+  background-position: left;
+  color: #ffd277;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition-duration: 1s;
+  overflow: hidden;
+}
+
+.Btn::before {
+  position: absolute;
+  content: "SUBSCRIBE";
+  color: #ffd277;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 97%;
+  height: 90%;
+  border-radius: 8px;
+  transition-duration: 1s;
+  background-color: rgba(0, 0, 0, 0.842);
+  background-size: 200%;
+}
+
+.Btn:hover {
+  background-position: right;
+  transition-duration: 1s;
+}
+
+.Btn:hover::before {
+  background-position: right;
+  transition-duration: 1s;
+}
+
+.Btn:active {
+  transform: scale(0.95);
 }
