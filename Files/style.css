@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+body{
+  background-color: black;
+}
+.nav-link{
+  color: white !important;
+}
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.nav-container{
+  background-color: black;
+}
+.li {
+    padding: 10px;
+    color: white;
+}
+button {
+  width: 10em;
+  position: relative;
+  height: 3.5em;
+  border: 3px ridge #149CEA;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  transition: 1s;
+  border-radius: 0.3em;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 3%;
+  width: 95%;
+  height: 40%;
+  background-color: black;
+  transition: 0.5s;
+  transform-origin: center;
+}
+button::before {
+  content: "";
+  transform-origin: center;
+  position: absolute;
+  top: 80%;
+  left: 3%;
+  width: 95%;
+  height: 40%;
+  background-color: black;
+  transition: 0.5s;
+}
+button:hover::before, button:hover::after {
+  transform: scale(0)
+}
+button:hover {
+  box-shadow: inset 0px 0px 25px #1479EA;
+}
+#main{
+  background-color: black;
+}
+.text{
+  color: white;
+  padding-top: 120px;
+}
+
+#description{
+  color: white;
+  text-align: center;
+  padding: 10px auto 10px auto;
+}
+h1 {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+}
+h1 span {
+  color: #7234fa;
+  position: relative;
+}
+h1 span::before {
+  content: "";
+  height: 30px;
+  width: 2px;
+  position: absolute;
+  top: 50%;
+  right: -8px;
+  background: #BD53ED;
+  transform: translateY(-45%);
+  animation: blink 0.7s infinite;
+}
+h1 span.stop-blinking::before {
+  animation: none;
+}
+@keyframes blink {
+  50% { opacity: 0 }
+}
+
+#typeEffect{
+  color: #dddbce;
+  text-align: left;
+}
