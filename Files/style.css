@@ -1296,6 +1296,35 @@ button:hover #clip {
 /* our services styling end */
 
 /* Tablets Responsiveness Start */
+@media(max-width:1115px) {
+  .nav-btn {
+    border-radius: 8px;
+    padding: 5px;
+    font-size: 12px;
+  }
+
+  #animateSecDiv img {
+    height: 52vh;
+  }
+
+  .animateSecTextDiv {
+    top: 34%;
+    left: 18%;
+    gap: 10px;
+  }
+
+  .text {
+    font-size: 25px;
+  }
+
+  h2 span {
+    font-size: 25px;
+  }
+
+  #description {
+    font-size: 15px;
+  }
+}
 @media(max-width:1024px) {
   .nav-btn {
     border-radius: 8px;
@@ -1433,6 +1462,9 @@ button:hover #clip {
 
   .nav-btn {
     width: 130px;
+  }
+  .ourServicesHeading{
+    font-size: 35px;
   }
 }
 
