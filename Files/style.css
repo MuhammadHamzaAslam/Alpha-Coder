@@ -1,149 +1,158 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 * {
-    font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .navbar {
-    background-color: rgb(0, 0, 0) !important;
-    padding: 5px;
-    position: sticky;
-    top: 0;
-    z-index: 99999;
-    border-bottom: 2px solid #00a2ff;
+  background-color: rgb(0, 0, 0) !important;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+  z-index: 99999;
+  border-bottom: 2px solid #00a2ff;
 }
 
 .navbar-brand {
-    display: flex;
-    align-items: center;
-    color: white !important;
-    font-weight: bold;
-    font-size: 25px;
+  display: flex;
+  align-items: center;
+  color: white !important;
+  font-weight: bold;
+  font-size: 25px;
 }
 
 .nav-link {
-    color: white !important;
-    font-weight: bold;
-    border-radius: 10px;
-    padding: 8px;
-    transition: all 0.3s;
+  color: white !important;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 8px;
+  transition: all 0.3s;
 }
 
 .nav-link:hover {
-    background-color: #00a2ff;
-    transition: all 0.3s;
+  background-color: #00a2ff;
+  transition: all 0.3s;
 }
 
 .nav-Ul {
-    display: flex;
-    gap: 40px;
+  display: flex;
+  gap: 40px;
 }
 
 .nav-Ul .nav-item {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .navbar-toggler {
-    color: #00a2ff;
-    background-color: #ffffff;
+  color: #00a2ff;
+  background-color: #ffffff;
 }
 
 .navbtns-container {
-    background-color: #000000;
-    padding: 12px;
-    border-bottom: 2px solid #00a2ff;
+  background-color: #000000;
+  padding: 12px;
+  border-bottom: 2px solid #00a2ff;
 }
 
 .nav-btnsDiv {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 10px;
+  /*   yaha me yani hasnain ne imporatant lagaya ur 
+  scroll lagaya lekin koi banda isko sahi kare k size chota na hu buttons ka */
+  
+  display: flex !important;
+  overflow-x: scroll !important;
+  scrollbar-width: none;
+  flex-wrap: nowrap !important;
+  justify-content: space-between !important;
+  gap: 10px;
+
 }
 
 .nav-btn {
-    background-color: black;
-    color: white;
-    border: 2px solid #00a2ff;
-    border-radius: 10px;
-    padding: 7px;
-    transition: all 0.5s;
-    font-size: 17px;
+  background-color: black;
+  color: white;
+  border: 2px solid #00a2ff;
+  border-radius: 10px;
+  padding: 7px;
+  transition: all 0.5s;
+  font-size: 17px;
 }
 
 .nav-btn:hover {
-    color: #12d8fb;
-    box-shadow: 0px 0px 9px #00d9ff;
-    border: 2px solid #00d9ff;
-    transition: all 0.5s;
+  color: #12d8fb;
+  box-shadow: 0px 0px 9px #00d9ff;
+  border: 2px solid #00d9ff;
+  transition: all 0.5s;
 }
 
 #animateSecDiv {
-    background-image: url('../images/animationimg2.jpg') !important;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    height: 90vh;
-    position: relative;
+  background-image: url('../images/animationimg2.jpg') !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 90vh;
+  position: relative;
 }
 
 .animateSecTextDiv {
-    position: absolute;
-    top: 37%;
-    left: 20%;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    text-align: center;
+  position: absolute;
+  top: 37%;
+  left: 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: center;
 }
 
 .text {
-    color: white;
-    font-size: 2rem;
-    font-weight: 600;
+  color: white;
+  font-size: 2rem;
+  font-weight: 600;
 }
 
 h2 span {
-    color: #00d9ff;
-    position: relative;
-    font-size: 35px;
+  color: #00d9ff;
+  position: relative;
+  font-size: 35px;
 }
 
 h2 span::before {
-    content: "";
-    height: 30px;
-    width: 2px;
-    position: absolute;
-    top: 50%;
-    right: -8px;
-    background: #00d9ff;
-    transform: translateY(-45%);
-    animation: blink 0.7s infinite;
+  content: "";
+  height: 30px;
+  width: 2px;
+  position: absolute;
+  top: 50%;
+  right: -8px;
+  background: #00d9ff;
+  transform: translateY(-45%);
+  animation: blink 0.7s infinite;
 }
 
 h2 span.stop-blinking::before {
-    animation: none;
+  animation: none;
 }
 
 @keyframes blink {
-    50% { opacity: 0 }
+  50% {
+    opacity: 0
+  }
 }
 
 #description {
-    color: white;
-    text-align: center;
-    font-size: 20px;
+  color: white;
+  text-align: center;
+  font-size: 20px;
 }
+
 /* animated Section end */
 
 /* our services styling start */
-#servicesArea{
+#servicesArea {
   background-color: black;
 }
 
@@ -235,11 +244,11 @@ h2 span.stop-blinking::before {
   80%,
   90%,
   100% {
-      transform: rotate(calc(var(--rotation) * 1deg)) translate(0, calc(var(--translation) * 1%));
+    transform: rotate(calc(var(--rotation) * 1deg)) translate(0, calc(var(--translation) * 1%));
   }
 
   50% {
-      transform: rotate(calc(var(--rotation) * 1deg)) translate(0, calc(var(--translation) * 1.5%));
+    transform: rotate(calc(var(--rotation) * 1deg)) translate(0, calc(var(--translation) * 1.5%));
   }
 }
 
@@ -257,6 +266,7 @@ h2 span.stop-blinking::before {
   justify-content: center;
   align-items: center;
 }
+
 #wifi-loader .circle-outer .back,
 #wifi-loader .circle-outer .front,
 #wifi-loader .circle-outer .new,
@@ -264,12 +274,15 @@ h2 span.stop-blinking::before {
 #wifi-loader .circle-middle .front,
 #wifi-loader .circle-inner .back,
 #wifi-loader .circle-inner .front {
-  stroke: white; /* Change the color of the SVG circles to white */
+  stroke: white;
+  /* Change the color of the SVG circles to white */
 }
 
 #wifi-loader .text {
-  color: white !important; /* Change the color of the text to white */
+  color: white !important;
+  /* Change the color of the text to white */
 }
+
 #wifi-loader svg {
   position: absolute;
   display: flex;
@@ -362,6 +375,7 @@ h2 span.stop-blinking::before {
 #wifi-loader .text::after {
   content: attr(data-text);
 }
+
 #wifi-loader .text::after {
   color: var(--front-color);
   animation: text-animation76 3.6s ease infinite;
@@ -371,81 +385,81 @@ h2 span.stop-blinking::before {
 
 @keyframes circle-outer135 {
   0% {
-      stroke-dashoffset: 25;
+    stroke-dashoffset: 25;
   }
 
   25% {
-      stroke-dashoffset: 0;
+    stroke-dashoffset: 0;
   }
 
   65% {
-      stroke-dashoffset: 301;
+    stroke-dashoffset: 301;
   }
 
   80% {
-      stroke-dashoffset: 276;
+    stroke-dashoffset: 276;
   }
 
   100% {
-      stroke-dashoffset: 276;
+    stroke-dashoffset: 276;
   }
 }
 
 @keyframes circle-middle6123 {
   0% {
-      stroke-dashoffset: 17;
+    stroke-dashoffset: 17;
   }
 
   25% {
-      stroke-dashoffset: 0;
+    stroke-dashoffset: 0;
   }
 
   65% {
-      stroke-dashoffset: 204;
+    stroke-dashoffset: 204;
   }
 
   80% {
-      stroke-dashoffset: 187;
+    stroke-dashoffset: 187;
   }
 
   100% {
-      stroke-dashoffset: 187;
+    stroke-dashoffset: 187;
   }
 }
 
 @keyframes circle-inner162 {
   0% {
-      stroke-dashoffset: 9;
+    stroke-dashoffset: 9;
   }
 
   25% {
-      stroke-dashoffset: 0;
+    stroke-dashoffset: 0;
   }
 
   65% {
-      stroke-dashoffset: 106;
+    stroke-dashoffset: 106;
   }
 
   80% {
-      stroke-dashoffset: 97;
+    stroke-dashoffset: 97;
   }
 
   100% {
-      stroke-dashoffset: 97;
+    stroke-dashoffset: 97;
   }
 }
 
 @keyframes text-animation76 {
   0% {
-      clip-path: inset(0 100% 0 0);
+    clip-path: inset(0 100% 0 0);
   }
 
   50% {
-      clip-path: inset(0);
+    clip-path: inset(0);
   }
 
   100% {
-      clip-path: inset(0 0 0 100%);
+    clip-path: inset(0 0 0 100%);
   }
 }
 
@@ -458,15 +472,15 @@ h2 span.stop-blinking::before {
 
 @keyframes letter {
   0% {
-      font-size: 30px;
+    font-size: 30px;
   }
 
   50% {
-      font-size: 40px;
+    font-size: 40px;
   }
 
   100% {
-      font-size: 30px;
+    font-size: 30px;
   }
 }
 
@@ -747,141 +761,142 @@ h2 span.stop-blinking::before {
 
 @-webkit-keyframes bounceInBefore-44 {
   0% {
-      opacity: 0;
-      transform: scale(0.3) translate(-50%, -50%) rotate(45deg);
+    opacity: 0;
+    transform: scale(0.3) translate(-50%, -50%) rotate(45deg);
   }
 
   50% {
-      opacity: 0.9;
-      transform: scale(1.1) translate(-50%, -50%) rotate(45deg);
+    opacity: 0.9;
+    transform: scale(1.1) translate(-50%, -50%) rotate(45deg);
   }
 
   80% {
-      opacity: 1;
-      transform: scale(0.89) translate(-50%, -50%) rotate(45deg);
+    opacity: 1;
+    transform: scale(0.89) translate(-50%, -50%) rotate(45deg);
   }
 
   100% {
-      opacity: 1;
-      transform: scale(1) translate(-50%, -50%) rotate(45deg);
+    opacity: 1;
+    transform: scale(1) translate(-50%, -50%) rotate(45deg);
   }
 }
 
 @keyframes bounceInBefore-44 {
   0% {
-      opacity: 0;
-      transform: scale(0.3) translate(-50%, -50%) rotate(45deg);
+    opacity: 0;
+    transform: scale(0.3) translate(-50%, -50%) rotate(45deg);
   }
 
   50% {
-      opacity: 0.9;
-      transform: scale(1.1) translate(-50%, -50%) rotate(45deg);
+    opacity: 0.9;
+    transform: scale(1.1) translate(-50%, -50%) rotate(45deg);
   }
 
   80% {
-      opacity: 1;
-      transform: scale(0.89) translate(-50%, -50%) rotate(45deg);
+    opacity: 1;
+    transform: scale(0.89) translate(-50%, -50%) rotate(45deg);
   }
 
   100% {
-      opacity: 1;
-      transform: scale(1) translate(-50%, -50%) rotate(45deg);
+    opacity: 1;
+    transform: scale(1) translate(-50%, -50%) rotate(45deg);
   }
 }
 
 @-webkit-keyframes bounceInAfter-44 {
   0% {
-      opacity: 0;
-      transform: scale(0.3) translate(-50%, -50%) rotate(-45deg);
+    opacity: 0;
+    transform: scale(0.3) translate(-50%, -50%) rotate(-45deg);
   }
 
   50% {
-      opacity: 0.9;
-      transform: scale(1.1) translate(-50%, -50%) rotate(-45deg);
+    opacity: 0.9;
+    transform: scale(1.1) translate(-50%, -50%) rotate(-45deg);
   }
 
   80% {
-      opacity: 1;
-      transform: scale(0.89) translate(-50%, -50%) rotate(-45deg);
+    opacity: 1;
+    transform: scale(0.89) translate(-50%, -50%) rotate(-45deg);
   }
 
   100% {
-      opacity: 1;
-      transform: scale(1) translate(-50%, -50%) rotate(-45deg);
+    opacity: 1;
+    transform: scale(1) translate(-50%, -50%) rotate(-45deg);
   }
 }
 
 @keyframes bounceInAfter-44 {
   0% {
-      opacity: 0;
-      transform: scale(0.3) translate(-50%, -50%) rotate(-45deg);
+    opacity: 0;
+    transform: scale(0.3) translate(-50%, -50%) rotate(-45deg);
   }
 
   50% {
-      opacity: 0.9;
-      transform: scale(1.1) translate(-50%, -50%) rotate(-45deg);
+    opacity: 0.9;
+    transform: scale(1.1) translate(-50%, -50%) rotate(-45deg);
   }
 
   80% {
-      opacity: 1;
-      transform: scale(0.89) translate(-50%, -50%) rotate(-45deg);
+    opacity: 1;
+    transform: scale(0.89) translate(-50%, -50%) rotate(-45deg);
   }
 
   100% {
-      opacity: 1;
-      transform: scale(1) translate(-50%, -50%) rotate(-45deg);
+    opacity: 1;
+    transform: scale(1) translate(-50%, -50%) rotate(-45deg);
   }
 }
 
 @-webkit-keyframes bounceInBeforeDont-44 {
   0% {
-      opacity: 1;
-      transform: scale(1) translate(-50%, -50%) rotate(45deg);
+    opacity: 1;
+    transform: scale(1) translate(-50%, -50%) rotate(45deg);
   }
 
   100% {
-      opacity: 0;
-      transform: scale(0.3) translate(-50%, -50%) rotate(45deg);
+    opacity: 0;
+    transform: scale(0.3) translate(-50%, -50%) rotate(45deg);
   }
 }
 
 @keyframes bounceInBeforeDont-44 {
   0% {
-      opacity: 1;
-      transform: scale(1) translate(-50%, -50%) rotate(45deg);
+    opacity: 1;
+    transform: scale(1) translate(-50%, -50%) rotate(45deg);
   }
 
   100% {
-      opacity: 0;
-      transform: scale(0.3) translate(-50%, -50%) rotate(45deg);
+    opacity: 0;
+    transform: scale(0.3) translate(-50%, -50%) rotate(45deg);
   }
 }
 
 @-webkit-keyframes bounceInAfterDont-44 {
   0% {
-      opacity: 1;
-      transform: scale(1) translate(-50%, -50%) rotate(-45deg);
+    opacity: 1;
+    transform: scale(1) translate(-50%, -50%) rotate(-45deg);
   }
 
   100% {
-      opacity: 0;
-      transform: scale(0.3) translate(-50%, -50%) rotate(-45deg);
+    opacity: 0;
+    transform: scale(0.3) translate(-50%, -50%) rotate(-45deg);
   }
 }
 
 @keyframes bounceInAfterDont-44 {
   0% {
-      opacity: 1;
-      transform: scale(1) translate(-50%, -50%) rotate(-45deg);
+    opacity: 1;
+    transform: scale(1) translate(-50%, -50%) rotate(-45deg);
   }
 
   100% {
-      opacity: 0;
-      transform: scale(0.3) translate(-50%, -50%) rotate(-45deg);
+    opacity: 0;
+    transform: scale(0.3) translate(-50%, -50%) rotate(-45deg);
   }
 }
+
 /* main2KaSubDiv2 ko arrange kiya */
-.main2KaSubDiv2{
+.main2KaSubDiv2 {
   height: 250px;
   width: 250px;
   border: 1px solid black;
@@ -889,6 +904,7 @@ h2 span.stop-blinking::before {
   justify-content: center;
   align-items: center;
 }
+
 /* 2nd CheckBox Css */
 .heart-container {
   --heart-color: rgb(255, 91, 137);
@@ -916,7 +932,7 @@ h2 span.stop-blinking::before {
 }
 
 .heart-container .svg-outline,
-        .heart-container .svg-filled {
+.heart-container .svg-filled {
   fill: var(--heart-color);
   position: absolute;
 }
@@ -975,8 +991,9 @@ h2 span.stop-blinking::before {
     display: none;
   }
 }
+
 /* main2KaSubDiv3 ko arrange kiya */
-.main2KaSubDiv3{
+.main2KaSubDiv3 {
   height: 250px;
   width: 250px;
   border: 1px solid black;
@@ -984,6 +1001,7 @@ h2 span.stop-blinking::before {
   justify-content: center;
   align-items: center;
 }
+
 /* Check box 3 Css */
 .center {
   width: 100%;
@@ -1021,203 +1039,246 @@ input:checked[type="checkbox"]:before {
   border-color: rgb(24, 196, 24);
   transform: rotate(45deg) translate(5px, -10px);
 }
+
 /* Give Shadow To all Cards */
-.shadow{
+.shadow {
   background-color: black;
   color: white;
   border: 2px solid #00a2ff;
   border-radius: 10px;
   margin: 20px;
 }
-.shadow:hover{
-  color:  #12d8fb;
+
+.shadow:hover {
+  color: #12d8fb;
   box-shadow: 0px 0px 9px #00d9ff !important;
   cursor: pointer;
   border: 2px solid #00d9ff;
   transition: all 0.5s;
 }
-.xyz{
+
+.xyz {
   text-align: center;
   color: white;
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
 /* our services styling end */
 
 /* Tablets Responsiveness Start */
-@media(max-width:1024px){
-  .nav-btn{
+@media(max-width:1024px) {
+  .nav-btn {
     border-radius: 8px;
     padding: 5px;
     font-size: 12px;
- }
- #animateSecDiv img{
-  height: 52vh;
+  }
+
+  #animateSecDiv img {
+    height: 52vh;
+  }
+
+  .animateSecTextDiv {
+    top: 34%;
+    left: 18%;
+    gap: 10px;
+  }
+
+  .text {
+    font-size: 25px;
+  }
+
+  h2 span {
+    font-size: 25px;
+  }
+
+  #description {
+    font-size: 15px;
+  }
 }
-.animateSecTextDiv{
-  top: 34%;
-  left:18%;
-  gap: 10px;
-}
-.text{
-  font-size: 25px;
-}
-h2 span {
-  font-size: 25px;
-}
-#description{
-  font-size: 15px;
-}
-}
-@media(max-width:912px){
-  #animateSecDiv img{
+
+@media(max-width:912px) {
+  #animateSecDiv img {
     height: 50vh;
   }
-  .animateSecTextDiv{
+
+  .animateSecTextDiv {
     top: 34%;
-    left:14%;
+    left: 14%;
   }
-  .nav-btnsDiv{
+
+  .nav-btnsDiv {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
   }
-  .nav-btn{
+
+  .nav-btn {
     width: 150px;
- }
+  }
 }
-@media(max-width:814px){
-  #animateSecDiv img{
+
+@media(max-width:814px) {
+  #animateSecDiv img {
     height: 43vh;
   }
-  .animateSecTextDiv{
+
+  .animateSecTextDiv {
     top: 38%;
-    left:23%;
+    left: 23%;
   }
-  .nav-btn{
+
+  .nav-btn {
     width: 130px;
- }
- .text{
-  font-size: 17px;
+  }
+
+  .text {
+    font-size: 17px;
+  }
+
+  h2 span {
+    font-size: 20px;
+  }
+
+  #description {
+    font-size: 12px;
+  }
 }
-h2 span {
-  font-size: 20px;
-}
-#description{
-  font-size: 12px;
-}
-}
-@media(max-width:714px){
-  #animateSecDiv img{
+
+@media(max-width:714px) {
+  #animateSecDiv img {
     height: 40vh;
   }
-  .animateSecTextDiv{
+
+  .animateSecTextDiv {
     top: 45%;
-    left:18%;
+    left: 18%;
   }
-  .nav-btn{
+
+  .nav-btn {
     width: 180px;
- }
+  }
 }
+
 /* Tablets Responsiveness End */
 
 /* Mobile Responsiveness Start */
-@media(max-width:585px){
-  .navbar-brand{
+@media(max-width:585px) {
+  .navbar-brand {
     font-size: 20px;
   }
-  #animateSecDiv img{
+
+  #animateSecDiv img {
     height: 40vh;
   }
-  .animateSecTextDiv{
+
+  .animateSecTextDiv {
     top: 45%;
-    left:15%;
+    left: 15%;
   }
-  .text{
+
+  .text {
     font-size: 15px;
   }
-  .nav-btn{
+
+  .nav-btn {
     width: 130px;
- }
+  }
 }
-@media(max-width:465px){
-  #animateSecDiv img{
+
+@media(max-width:465px) {
+  #animateSecDiv img {
     height: 32vh;
   }
-  .animateSecTextDiv{
+
+  .animateSecTextDiv {
     top: 42%;
-    left:15%;
+    left: 15%;
     gap: 2px;
   }
-  .text{
+
+  .text {
     font-size: 12px;
   }
+
   h2 span {
     font-size: 15px;
   }
+
   h2 span::before {
     content: "";
     height: 17px;
   }
-  #description{
+
+  #description {
     font-size: 10px;
   }
-  .nav-btn{
+
+  .nav-btn {
     width: 120px;
     font-size: 10px;
- }
+  }
 }
-@media(max-width:404px){
-  #animateSecDiv img{
+
+@media(max-width:404px) {
+  #animateSecDiv img {
     height: 29vh;
   }
-  .animateSecTextDiv{
+
+  .animateSecTextDiv {
     top: 41%;
-    left:11%;
+    left: 11%;
   }
-  .nav-btn{
+
+  .nav-btn {
     width: 110px;
     font-size: 10px;
- }
+  }
 }
-@media(max-width:374px){
-  #animateSecDiv img{
+
+@media(max-width:374px) {
+  #animateSecDiv img {
     height: 29vh;
   }
-  .animateSecTextDiv{
+
+  .animateSecTextDiv {
     top: 38%;
-    left:9%;
+    left: 9%;
   }
-  .nav-btn{
+
+  .nav-btn {
     width: 100px;
     font-size: 7px;
- }
-}
-@media(max-width:343px){
-  .animateSecTextDiv{
-    top: 48%;
-    left:9%;
   }
-  .text{
+}
+
+@media(max-width:343px) {
+  .animateSecTextDiv {
+    top: 48%;
+    left: 9%;
+  }
+
+  .text {
     font-size: 10px;
   }
 }
+
 /* Mobile Responsiveness End */
 @media (max-width: 991px) {
   .animateSecTextDiv {
-      top: 50%;
-      left: 10%;
-      transform: translateY(-50%);
-      width: 80%;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    width: 80%;
   }
-  
+
   .nav-Ul {
-      display: block;
-      text-align: center;
+    display: block;
+    text-align: center;
   }
-  
+
   .nav-Ul .nav-item {
-      margin-bottom: 10px;
+    margin-bottom: 10px;
   }
 }
