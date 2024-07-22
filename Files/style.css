@@ -8,8 +8,9 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: black;
 }
-
+/* navbar start*/
 .navbar {
   background-color: rgb(0, 0, 0) !important;
   padding: 5px;
@@ -53,7 +54,8 @@ body {
   color: #00a2ff;
   background-color: #ffffff;
 }
-
+/* navbar end*/
+/* button navbar start */
 .navbtns-container {
   background-color: #000000;
   padding: 12px;
@@ -63,7 +65,6 @@ body {
 .nav-btnsDiv {
   /*   yaha me yani hasnain ne imporatant lagaya ur 
       scroll lagaya lekin koi banda isko sahi kare k size chota na hu buttons ka */
-
   display: flex !important;
   overflow-x: scroll !important;
   scrollbar-width: none;
@@ -72,8 +73,6 @@ body {
   gap: 10px;
 
 }
-
-
 .nav-btn {
   background-color: black;
   color: white;
@@ -90,38 +89,34 @@ body {
   border: 2px solid #00d9ff;
   transition: all 0.5s;
 }
-
+/* button navbar end */
 #animateSecDiv {
   background-image: url('../images/animationimg2.jpg') !important;
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
-  height: 90vh;
+  height: 85vh;
   position: relative;
 }
-
 .animateSecTextDiv {
   position: absolute;
-  top: 37%;
+  top: 35%;
   left: 20%;
   display: flex;
   flex-direction: column;
   gap: 15px;
   text-align: center;
 }
-
 .text {
   color: white;
   font-size: 2rem;
   font-weight: 600;
 }
-
 h2 span {
   color: #00d9ff;
   position: relative;
   font-size: 35px;
 }
-
 h2 span::before {
   content: "";
   height: 30px;
@@ -133,17 +128,14 @@ h2 span::before {
   transform: translateY(-45%);
   animation: blink 0.7s infinite;
 }
-
 h2 span.stop-blinking::before {
   animation: none;
 }
-
 @keyframes blink {
   50% {
     opacity: 0
   }
 }
-
 #description {
   color: white;
   text-align: center;
@@ -155,15 +147,21 @@ h2 span.stop-blinking::before {
 /* our services styling start */
 #servicesArea {
   background-color: black;
+  margin-top: 10%;
 }
-
+.ourServicesHeading{
+  color: white;
+  text-align: center;
+  margin-bottom: 5%;
+  font-size: 50px;
+  text-shadow: 0px 0px 5px white;
+}
 /* 1st Loader */
 .spinner {
   position: absolute;
   width: 9px;
   height: 9px;
 }
-
 .spinner div {
   position: absolute;
   width: 50%;
@@ -1276,32 +1274,25 @@ button:hover #clip {
   box-shadow: inset 0 0 0 10em rgb(40, 144, 241);
 }
 
-
-
 /* Give Shadow To all Cards */
 .shadow {
   background-color: black;
   color: white;
   border: 3px solid #00a2ff;
-  border-radius: 10px;
+  border-radius: 20px;
   margin: 20px;
-}
-
-.shadow:hover {
-  color: #12d8fb;
-  box-shadow: 0px 0px 9px #00d9ff !important;
-  cursor: pointer;
-  border: 5px solid #00d9ff;
   transition: all 0.5s;
 }
-
-.xyz {
-  text-align: center;
-  color: white;
-  padding-top: 20px;
-  padding-bottom: 20px;
+.shadow:hover {
+  color: #12d8fb;
+  box-shadow: 0px 0px 10px #00d9ff !important;
+  cursor: pointer;
+  border: 3px solid #00d9ff;
+  transition: all 0.5s;
 }
+/* card buttons start */
 
+/* card buttons end*/
 /* our services styling end */
 
 /* Tablets Responsiveness Start */
@@ -1334,27 +1325,47 @@ button:hover #clip {
     font-size: 15px;
   }
 }
-
+@media(max-width:1009px) {
+  .nav-btn {
+    border-radius: 8px;
+    padding: 5px;
+    font-size: 11px;
+  }
+}
+@media(max-width:947px) {
+  .nav-btn {
+    border-radius: 8px;
+    padding: 5px;
+    font-size: 10px;
+  }
+}
+@media(max-width:687px) {
+  .nav-btn{
+    border-radius: 8px;
+    padding: 5px;
+    font-size: 9px;
+  }
+}
+@media(max-width:599px) {
+  .nav-btn{
+    border-radius: 8px;
+    padding: 3px;
+    font-size: 8px;
+  }
+}
 @media(max-width:912px) {
   #animateSecDiv img {
     height: 50vh;
   }
-
   .animateSecTextDiv {
     top: 34%;
     left: 14%;
   }
-
-  .nav-btnsDiv {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-  }
-
-  .nav-btn {
-    width: 150px;
-  }
+  /* .nav-btn {
+    border-radius: 8px;
+    padding: 6px;
+    font-size: 10px;
+  } */
 }
 
 @media(max-width:814px) {
@@ -1453,9 +1464,10 @@ button:hover #clip {
     font-size: 10px;
   }
 
-  .nav-btn {
-    width: 120px;
-    font-size: 10px;
+  .nav-btn{
+    border-radius: 8px;
+    padding: 5px;
+    font-size: 8px;
   }
 }
 
