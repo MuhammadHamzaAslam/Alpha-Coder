@@ -564,7 +564,7 @@ details {
 /* our team cards styling  */
 
 .first-row-of-members {
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .cardMain {
