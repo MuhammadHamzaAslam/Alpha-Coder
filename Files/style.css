@@ -2,7 +2,6 @@
 
 * {
   font-family: 'Poppins', sans-serif;
-  /* border: 1px solid red; */
 }
 
 body {
@@ -120,13 +119,13 @@ body {
   font-weight: 600;
 }
 
-h2 span {
+.autoText span {
   color: #00d9ff;
   position: relative;
   font-size: 35px;
 }
 
-h2 span::before {
+.autoText span::before {
   content: "";
   height: 30px;
   width: 2px;
@@ -138,7 +137,7 @@ h2 span::before {
   animation: blink 0.7s infinite;
 }
 
-h2 span.stop-blinking::before {
+.autoText span.stop-blinking::before {
   animation: none;
 }
 
@@ -157,7 +156,13 @@ h2 span.stop-blinking::before {
 /* animated Section end */
 
 /* our services styling start */
-
+.ourServicesHeading{
+  margin-top: 10%;
+  margin-bottom: 5%;
+  font-size: 45px;
+  text-align: center;
+  color: white;
+}
 .card-row {
   width: 100%;
   display: flex;
@@ -170,17 +175,19 @@ h2 span.stop-blinking::before {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border: 1px solid #00a2ff;
+  border: 2px solid #00a2ff;
+  border-radius: 15px;
   color: white;
   margin: 10px;
   width: 400px;
   height: 320px;
-  box-shadow: 2px 2px 10px #00d9ff;
   margin-left: 13px !important;
+  margin-bottom: 2%;
+  transition: all 0.5s;
 }
-
 .cards:hover {
-  transform: scale(0.9);
+  box-shadow: 0px 0px 15px #00d9ff;
+  transition: all 0.5s;
 }
 
 .para {
@@ -205,15 +212,22 @@ h2 span.stop-blinking::before {
 /* our services styling end */
 
 
-
-
 /* why to choose us styling start  */
-
-
-details {
+.reasonHeading{
+  margin-top: 14%;
+  margin-bottom: 5%;
+  text-align: center;
+  color: white;
+  font-size: 45px;
+}
+.reasonSpan{
   color: #00a2ff;
+  font-size: 45px;
+}
+details {
+  color: #ffffff;
   font-size: 25px;
-  padding-top: 40px;
+  padding: 20px;
 }
 
 .choose-row {
@@ -225,10 +239,14 @@ details {
 }
 
 .choose {
-  border: 1px solid white;
-  box-shadow: 4px 4px 15px #00a2ff;
+  border: 2px solid #00a2ff;
+  border-radius: 15px;
+  transition: all 0.5s;
 }
-
+.choose:hover{
+  box-shadow: 0px 0px 10px #00a2ff;
+  transition: all 0.5s;
+}
 .choose p {
   color: white;
   margin-top: 20px;
@@ -238,41 +256,145 @@ details {
 .choose ul {
   color: white;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* why to choose us styling end  */
 
 
+/* Hasnain Work Start here  */
+
+/* our team cards styling  */
+.teamHeading{
+  color: white;
+  font-size: 45px;
+  text-align: center;
+  margin-top: 14%;
+  margin-bottom: 2%;
+}
+.teamHeadingspan{
+  color: #00a2ff;
+  font-size: 45px;
+}
+
+.first-row-of-members {
+  justify-content: space-evenly;
+}
+
+.cardMain {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardMain:hover {
+  .card-inner-2 {
+    transition: 0.5s ease;
+    background-color: #00a2ff;
+  }
+
+  .card-inner-1 img {
+    transition: 0.5s ease;
+    border: 7px solid black;
+
+  }
+
+  .card-inner-2 {
+    transition: 0.5s ease;
+    border-left: 2px dashed black;
+    border-right: 2px dashed black;
+    color: black;
+  }
+
+  .card-inner-2 h6 {
+    border-top: 2px dashed black;
+    border-bottom: 2px dashed black;
+    transition: 0.5s ease;
+  }
+
+  .card-inner-2 h5 {
+    transition: 0.5s ease;
+    border-top: 2px dashed black;
+    border-bottom: 2px dashed black;
+  }
+
+  .icon-bar-fontawesome {
+    transition: 0.5s ease;
+    border-top: 2px dashed black;
+    border-bottom: 2px dashed black;
+
+  }
+
+  .icon-bar-fontawesome a {
+    color: black !important;
+    transition: 0.5s ease;
+
+  }
+
+}
+
+.card-inner-1 {
+  box-sizing: border-box !important;
+  position: relative;
+  height: 150px;
+}
+
+.card-inner-1 img {
+  box-sizing: border-box !important;
+  width: 120px;
+  border: 7px solid #00a2ff;
+  border-radius: 50%;
+  position: absolute;
+  top: 40px;
+  left: 22px;
+}
 
 
+.card-inner-2 {
+  width: 100%;
+  height: 100%;
+  /* background-color: rgb(49, 49, 49); */
+  background-color: rgb(48, 48, 48);
+  color: #00a2ff;
+  border-left: 2px dashed #00a2ff;
+  border-right: 2px dashed #00a2ff;
+}
 
+.card-inner-2 h5 {
+  padding: 5px;
+  font-size: smaller;
+  text-align: center;
+  font-weight: 800;
+  margin-top: 85px !important;
+  border-top: 2px dashed #00a2ff;
 
+  border-bottom: 2px dashed #00a2ff;
 
+}
 
+.card-inner-2 h6 {
+  padding: 5px;
+  font-size: smaller;
+  text-align: center;
+  font-weight: 700;
+  margin-top: 5px;
+  border-top: 2px dashed #00a2ff;
+  border-bottom: 2px dashed #00a2ff;
+}
 
+.icon-bar-fontawesome {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 25px;
+  border-top: 2px dashed #00a2ff;
+  border-bottom: 2px dashed #00a2ff;
+}
 
+.icon-bar-fontawesome a {
+  color: #00a2ff !important;
 
+}
 
-
-
-
-
-
-
-
+/* hasnain css work of our team cars is end here */
 
 
 /* Tablets Responsiveness Start */
@@ -334,6 +456,15 @@ details {
   #description {
     font-size: 15px;
   }
+  .ourServicesHeading{
+    font-size: 40px;
+  }
+  .reasonHeading{
+    font-size: 30px;
+  }
+  .reasonSpan{
+    font-size: 30px;
+  }
 }
 
 @media(max-width:1009px) {
@@ -377,12 +508,6 @@ details {
     top: 34%;
     left: 14%;
   }
-
-  /* .nav-btn {
-    border-radius: 8px;
-    padding: 6px;
-    font-size: 10px;
-  } */
 }
 
 @media(max-width:814px) {
@@ -450,10 +575,6 @@ details {
 
   .nav-btn {
     width: 130px;
-  }
-
-  .ourServicesHeading {
-    font-size: 35px;
   }
 }
 
@@ -558,130 +679,3 @@ details {
 }
 
 /* Responsive issue of navbar solve */
-
-/* Hasnain Work Start here  */
-
-/* our team cards styling  */
-
-.first-row-of-members {
-  justify-content: space-evenly;
-}
-
-.cardMain {
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-}
-
-.cardMain:hover {
-  .card-inner-2 {
-    transition: 0.5s ease;
-    background-color: #00a2ff;
-  }
-
-  .card-inner-1 img {
-    transition: 0.5s ease;
-    border: 7px solid black;
-
-  }
-
-  .card-inner-2 {
-    transition: 0.5s ease;
-    border-left: 2px dashed black;
-    border-right: 2px dashed black;
-    color: black;
-
-  }
-
-  .card-inner-2 h6 {
-    border-top: 2px dashed black;
-    border-bottom: 2px dashed black;
-    transition: 0.5s ease;
-  }
-
-  .card-inner-2 h5 {
-    transition: 0.5s ease;
-    border-top: 2px dashed black;
-    border-bottom: 2px dashed black;
-  }
-
-  .icon-bar-fontawesome {
-    transition: 0.5s ease;
-    border-top: 2px dashed black;
-    border-bottom: 2px dashed black;
-
-  }
-
-  .icon-bar-fontawesome a {
-    color: black !important;
-    transition: 0.5s ease;
-
-  }
-
-}
-
-.card-inner-1 {
-  box-sizing: border-box !important;
-  position: relative;
-  height: 150px;
-}
-
-.card-inner-1 img {
-  box-sizing: border-box !important;
-  width: 120px;
-  border: 7px solid #00a2ff;
-  border-radius: 50%;
-  position: absolute;
-  top: 40px;
-  left: 22px;
-}
-
-
-.card-inner-2 {
-  width: 100%;
-  height: 100%;
-  /* background-color: rgb(49, 49, 49); */
-  background-color: rgb(48, 48, 48);
-  color: #00a2ff;
-  border-left: 2px dashed #00a2ff;
-  border-right: 2px dashed #00a2ff;
-}
-
-.card-inner-2 h5 {
-  padding: 5px;
-  font-size: smaller;
-  text-align: center;
-  font-weight: 800;
-  margin-top: 85px !important;
-  border-top: 2px dashed #00a2ff;
-
-  border-bottom: 2px dashed #00a2ff;
-
-}
-
-.card-inner-2 h6 {
-  padding: 5px;
-  font-size: smaller;
-  text-align: center;
-  font-weight: 700;
-  margin-top: 5px;
-  border-top: 2px dashed #00a2ff;
-  border-bottom: 2px dashed #00a2ff;
-}
-
-.icon-bar-fontawesome {
-  margin-top: 20px;
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  font-size: 25px;
-  border-top: 2px dashed #00a2ff;
-  border-bottom: 2px dashed #00a2ff;
-}
-
-.icon-bar-fontawesome a {
-  color: #00a2ff !important;
-
-}
-
-/* hasnain css work of our team cars is end here */
