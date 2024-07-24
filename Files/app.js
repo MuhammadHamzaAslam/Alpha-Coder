@@ -1,4 +1,4 @@
-const dynamicText = document.querySelector("h2 span");
+const dynamicText = document.querySelector("h1 span");
 const words = ["Generate QR Code", "CSS Amazing Borders", "Box Shadows", "CSS Loaders", "Check Boxes", "Text Shadow","CSS Color Gradient","Border Radius","Text To Speech"];
 
 // Variables to track the position and deletion status of the word
