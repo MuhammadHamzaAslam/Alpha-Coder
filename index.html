@@ -2,11 +2,78 @@
 <html data-wf-domain="www.oliverbibby.com" data-wf-page="5de9d96149103cfdc69842a1" data-wf-site="5de9d96149103c44ad9842a0">
     <head>
         <meta charset="utf-8"/>
-        <title>Glowing Tools</title>
+        <title>Web Glowing</title>
         <meta content="width=device-width, initial-scale=1" name="viewport"/>
         <link rel="stylesheet" href="Files/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link href="images/websiteLogo.png" rel="shortcut icon" type="image/x-icon"/>
+        <link href="images/webglowing.png" rel="shortcut icon" type="image/x-icon"/>
+       
+        <!-- light/dark mode styling -->
+       <style>
+            .checkbox-wrapper-54 input[type="checkbox"] {
+              visibility: hidden;
+              display: none;
+            }
+          
+            .checkbox-wrapper-54 *,
+            .checkbox-wrapper-54 ::after,
+            .checkbox-wrapper-54 ::before {
+              box-sizing: border-box;
+            }
+          
+            /* The switch - the box around the slider */
+            .checkbox-wrapper-54 .switch {
+              --width-of-switch: 3.5em;
+              --height-of-switch: 2em;
+              /* size of sliding icon -- sun and moon */
+              --size-of-icon: 1.4em;
+              /* it is like a inline-padding of switch */
+              --slider-offset: 0.3em;
+              position: relative;
+              width: var(--width-of-switch);
+              height: var(--height-of-switch);
+              display: inline-block;
+            }
+          
+            /* The slider */
+            .checkbox-wrapper-54 .slider {
+              position: absolute;
+              cursor: pointer;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              background-color: #f4f4f5;
+              transition: .4s;
+              border-radius: 30px;
+            }
+          
+            .checkbox-wrapper-54 .slider:before {
+              position: absolute;
+              content: "";
+              height: var(--size-of-icon,1.4em);
+              width: var(--size-of-icon,1.4em);
+              border-radius: 20px;
+              left: var(--slider-offset,0.3em);
+              top: 50%;
+              transform: translateY(-50%);
+              background: linear-gradient(40deg,#ff0080,#ff8c00 70%);
+              ;
+             transition: .4s;
+            }
+          
+            .checkbox-wrapper-54 input:checked + .slider {
+              background-color: #303136;
+            }
+          
+            .checkbox-wrapper-54 input:checked + .slider:before {
+              left: calc(100% - (var(--size-of-icon,1.4em) + var(--slider-offset,0.3em)));
+              background: #303136;
+              /* change the value of second inset in box-shadow to change the angle and direction of the moon  */
+              box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
+            }
+          </style>        
+    
     </head>
     <body class="body">
         <!-- Navbar Started -->
@@ -26,7 +93,7 @@
             <div class="columns-20 w-row">
                 <div class="column-49 w-col w-col-6">
                     <a data-w-id="28cf5821-0d92-d9cd-6758-77335d413f84" href="/" style="text-decoration: none;" aria-current="page" class="w-inline-block w--current">
-                        <div class="websiteLogo"><img src="images/websiteLogo.png" alt=""></div>
+                        <div class="websiteLogo"><img src="images/webglowing.png" alt=""></div>
                     </a>
                 </div>
                 <div class="column-45 w-col w-col-6">
@@ -40,10 +107,23 @@
         </div>
         <div data-w-id="16cd0e00-560c-af6b-bec4-3522cb9fbbf4" class="menubox wf-section">
             <div class="div-block-83">
-                <a data-w-id="16cd0e00-560c-af6b-bec4-3522cb9fbbf6" href="/" aria-current="page" class="link-10 toplink w--current">Home</a>
-                <a data-w-id="16cd0e00-560c-af6b-bec4-3522cb9fbbfa" href="/portfolio" class="link-10">Portfolio</a>
-                <a data-w-id="ce839481-e78e-11b1-e9bc-a6bf3fb1ab3e" href="/about-me" class="link-10">About</a>
-                <a data-w-id="16cd0e00-560c-af6b-bec4-3522cb9fbbfc" href="/contact-form" class="link-10">Contact</a>
+                <a data-w-id="16cd0e00-560c-af6b-bec4-3522cb9fbbf6" href="/" aria-current="page" class="link-10 toplink w--current" style="font-size: 20px;">Home</a>
+                <a data-w-id="16cd0e00-560c-af6b-bec4-3522cb9fbbfa" href="/portfolio" class="link-10" style="font-size: 20px;">Box Shadow Generator</a>
+                <a data-w-id="ce839481-e78e-11b1-e9bc-a6bf3fb1ab3e" href="/about-me" class="link-10" style="font-size: 20px;">Text To Speech</a>
+                <a data-w-id="16cd0e00-560c-af6b-bec4-3522cb9fbbfc" href="/contact-form" class="link-10" style="font-size: 20px;">Text Shadow Generator</a>
+                <a data-w-id="16cd0e00-560c-af6b-bec4-3522cb9fbbfc" href="/contact-form" class="link-10" style="font-size: 20px;">Border Radius Generator</a>
+                <a data-w-id="16cd0e00-560c-af6b-bec4-3522cb9fbbfc" href="/contact-form" class="link-10" style="font-size: 20px;">QR Code Generator</a>
+                <a data-w-id="16cd0e00-560c-af6b-bec4-3522cb9fbbfc" href="/contact-form" class="link-10" style="font-size: 20px;">CSS Gradient Color Generator</a>
+                <a data-w-id="16cd0e00-560c-af6b-bec4-3522cb9fbbfc" href="/contact-form" class="link-10" style="font-size: 20px;">CSS Border Generator</a>
+                <a data-w-id="16cd0e00-560c-af6b-bec4-3522cb9fbbfc" href="/contact-form" class="link-10" style="font-size: 20px;">CSS Cursor Generator</a>         
+               <!-- light/dark mode button start -->
+               <div class="checkbox-wrapper-54" style="position: absolute; left: 45%;">
+                   <label class="switch">
+                     <input type="checkbox">
+                     <span class="slider"></span>
+                   </label>
+                 </div> 
+                <!-- light/dark mode button end -->
             </div>  
             <div data-w-id="16cd0e00-560c-af6b-bec4-3522cb9fbbfe" class="div-block-84">
                 <a href="#" class="link-block w-inline-block">
@@ -53,10 +133,17 @@
         </div>
         <!-- Navbar Ended -->
 
+        <!-- animated ball start -->
         <div class="html-embed-9 w-embed w-iframe">
             <div style="position:absolute;right:0px;top:0px;overflow:hidden; height:20px; width:300px; z-index:1000;">&nbsp;</div>
             <iframe src="https://streamable.com/e/ex2j2j?autoplay=1" frameborder="0" width="100%" height="100%" allowfullscreen allow="autoplay" class="animatedBall" style="width:30%;height:100%;position:absolute;right:0px;top:5px;overflow:hidden;"></iframe>
         </div>
+
+        <!-- <div class="html-embed-9 w-embed w-iframe">
+            <div style="position:absolute;right:0px;top:0px;overflow:hidden; height:20px; width:300px; z-index:1000;">&nbsp;</div>
+            <iframe src="images/ball.gif" frameborder="0" width="100%" height="100%" allowfullscreen allow="autoplay" class="animatedBall" style="width:55%;height:100%;position:absolute;right:0px;top:5px;overflow:hidden;"></iframe>
+        </div> -->
+        <!-- animated ball end-->
 
         <!-- Animated Section started -->
         <div class="herobar wf-section">
@@ -78,7 +165,7 @@
                     <div class="column-40 w-col w-col-6">
                         <div data-w-id="f91687a9-c21a-d777-9ce9-398e30a97dc5" class="div-block-66"></div>
                         <a data-w-id="f91687a9-c21a-d777-9ce9-398e30a97dc6" href="/officeworks" class="w-inline-block">
-                            <img src="https://uploads-ssl.webflow.com/5de9d96149103c44ad9842a0/61d0dc023c449efd935e9839_profile3.png" loading="lazy" data-w-id="f91687a9-c21a-d777-9ce9-398e30a97dc7" srcset="https://uploads-ssl.webflow.com/5de9d96149103c44ad9842a0/61d0dc023c449efd935e9839_profile3-p-500.png 500w, https://uploads-ssl.webflow.com/5de9d96149103c44ad9842a0/61d0dc023c449efd935e9839_profile3.png 1302w" sizes="100vw" alt="Officeworks" class="image-64"/>
+                            <img src="images/boxshadow.jpg" loading="lazy" data-w-id="f91687a9-c21a-d777-9ce9-398e30a97dc7" srcset="images/boxshadow.jpg 500w, images/boxshadow.jpg 1302w" sizes="100vw" alt="Box Shadow" class="image-64"/>
                         </a>
                         <div data-w-id="f91687a9-c21a-d777-9ce9-398e30a97dc8" class="div-block-72"></div>
                         <a href="/officeworks" class="link-block-4 w-inline-block">
@@ -87,7 +174,7 @@
                         <div data-w-id="f91687a9-c21a-d777-9ce9-398e30a97dcb" class="vh-p2">Effortlessly create beautiful box shadows with our intuitive tool.</div>
                         <div data-w-id="f91687a9-c21a-d777-9ce9-398e30a97dcd" class="div-block-68"></div>
                         <a data-w-id="f91687a9-c21a-d777-9ce9-398e30a97dce" href="/nova-entertainment" class="w-inline-block">
-                            <img src="https://uploads-ssl.webflow.com/5de9d96149103c44ad9842a0/61d0dbdf3226d417d2fc7fe9_profile1.png" loading="lazy" data-w-id="f91687a9-c21a-d777-9ce9-398e30a97dcf" srcset="https://uploads-ssl.webflow.com/5de9d96149103c44ad9842a0/61d0dbdf3226d417d2fc7fe9_profile1-p-500.png 500w, https://uploads-ssl.webflow.com/5de9d96149103c44ad9842a0/61d0dbdf3226d417d2fc7fe9_profile1.png 1302w" sizes="100vw" alt="Nova Sample Invites" class="image-64"/>
+                            <img src="images/textshadow.jpg" loading="lazy" data-w-id="f91687a9-c21a-d777-9ce9-398e30a97dcf" srcset="images/textshadow.jpg 500w,images/textshadow.jpg 1302w" sizes="100vw" alt="Text Shadow Generator" class="image-64"/>
                         </a>
                         <div data-w-id="f91687a9-c21a-d777-9ce9-398e30a97dd0" class="div-block-72"></div>
                         <a href="/nova-entertainment" class="link-block-6 w-inline-block">
@@ -96,7 +183,7 @@
                         <div data-w-id="f91687a9-c21a-d777-9ce9-398e30a97dd3" class="vh-p2">Add depth and style to your text with customizable shadows.</div>
                         <div data-w-id="f91687a9-c21a-d777-9ce9-398e30a97dd5" class="div-block-68"></div>
                         <a data-w-id="f91687a9-c21a-d777-9ce9-398e30a97dd6" href="/bupa" class="w-inline-block">
-                            <img src="https://uploads-ssl.webflow.com/5de9d96149103c44ad9842a0/61d0dbf2be32b1a660f95842_profile4.png" loading="lazy" data-w-id="f91687a9-c21a-d777-9ce9-398e30a97dd7" srcset="https://uploads-ssl.webflow.com/5de9d96149103c44ad9842a0/61d0dbf2be32b1a660f95842_profile4-p-500.png 500w, https://uploads-ssl.webflow.com/5de9d96149103c44ad9842a0/61d0dbf2be32b1a660f95842_profile4.png 1302w" sizes="100vw" alt="Bupa" class="image-64"/>
+                            <img src="images/qrcode.jpg" loading="lazy" data-w-id="f91687a9-c21a-d777-9ce9-398e30a97dd7" srcset="images/qrcode.jpg 500w, images/qrcode.jpg 1302w" sizes="100vw" alt="QR Code Generator" class="image-64"/>
                         </a>
                         <div data-w-id="f91687a9-c21a-d777-9ce9-398e30a97dd8" class="div-block-72"></div>
                         <a href="/bupa" class="link-block-8 w-inline-block">
@@ -105,7 +192,7 @@
                         <div data-w-id="f91687a9-c21a-d777-9ce9-398e30a97ddb" class="vh-p2">Generate QR codes for links, text, and more with ease.</div>
                         <div data-w-id="f91687a9-c21a-d777-9ce9-398e30a97dd5" class="div-block-68"></div>
                         <a data-w-id="f91687a9-c21a-d777-9ce9-398e30a97dd6" href="/bupa" class="w-inline-block">
-                            <img src="https://uploads-ssl.webflow.com/5de9d96149103c44ad9842a0/61d0dbf2be32b1a660f95842_profile4.png" loading="lazy" data-w-id="f91687a9-c21a-d777-9ce9-398e30a97dd7" srcset="https://uploads-ssl.webflow.com/5de9d96149103c44ad9842a0/61d0dbf2be32b1a660f95842_profile4-p-500.png 500w, https://uploads-ssl.webflow.com/5de9d96149103c44ad9842a0/61d0dbf2be32b1a660f95842_profile4.png 1302w" sizes="100vw" alt="Bupa" class="image-64"/>
+                            <img src="images/cssborder generator.jpg" loading="lazy" data-w-id="f91687a9-c21a-d777-9ce9-398e30a97dd7" srcset="images/cssborder generator.jpg 500w, images/cssborder generator.jpg 1302w" sizes="100vw" alt="CSS Border Generator" class="image-64"/>
                         </a>
                         <div data-w-id="f91687a9-c21a-d777-9ce9-398e30a97dd8" class="div-block-72"></div>
                         <a href="/bupa" class="link-block-8 w-inline-block">
@@ -118,7 +205,7 @@
                         <div data-w-id="f91687a9-c21a-d777-9ce9-398e30a97dde" class="div-block-67"></div>
                         <div>
                             <a data-w-id="f91687a9-c21a-d777-9ce9-398e30a97de0" href="/target" class="w-inline-block">
-                                <img src="https://uploads-ssl.webflow.com/5de9d96149103c44ad9842a0/61d19de8a6e62e3074e9acf3_Target1%20(1).png" loading="lazy" data-w-id="f91687a9-c21a-d777-9ce9-398e30a97de1" srcset="https://uploads-ssl.webflow.com/5de9d96149103c44ad9842a0/61d19de8a6e62e3074e9acf3_Target1%20(1)-p-500.png 500w, https://uploads-ssl.webflow.com/5de9d96149103c44ad9842a0/61d19de8a6e62e3074e9acf3_Target1%20(1).png 1302w" sizes="100vw" alt="Woman at the beach." class="image-64"/>
+                                <img src="images/texttospeech.jpg" loading="lazy" data-w-id="f91687a9-c21a-d777-9ce9-398e30a97de1" srcset="images/texttospeech.jpg 500w, images/texttospeech.jpg 1302w" sizes="100vw" alt="Text To Speech" class="image-64"/>
                             </a>
                         </div>
                         <div data-w-id="f91687a9-c21a-d777-9ce9-398e30a97de2" class="div-block-72"></div>
@@ -128,7 +215,7 @@
                         <div data-w-id="f91687a9-c21a-d777-9ce9-398e30a97de5" class="vh-p2">Convert text to natural-sounding speech for various applications.</div>
                         <div data-w-id="f91687a9-c21a-d777-9ce9-398e30a97de7" class="div-block-69"></div>
                         <a data-w-id="f91687a9-c21a-d777-9ce9-398e30a97de8" href="/jeep" class="w-inline-block">
-                            <img src="https://uploads-ssl.webflow.com/5de9d96149103c44ad9842a0/61d0dc105a116ce37a4b519e_profile2.png" loading="lazy" data-w-id="f91687a9-c21a-d777-9ce9-398e30a97de9" srcset="https://uploads-ssl.webflow.com/5de9d96149103c44ad9842a0/61d0dc105a116ce37a4b519e_profile2-p-500.png 500w, https://uploads-ssl.webflow.com/5de9d96149103c44ad9842a0/61d0dc105a116ce37a4b519e_profile2.png 1302w" sizes="100vw" alt="Jeep" class="image-64"/>
+                            <img src="images/borderradius.jpg" loading="lazy" data-w-id="f91687a9-c21a-d777-9ce9-398e30a97de9" srcset="images/borderradius.jpg 500w,images/borderradius.jpg 1302w" sizes="100vw" alt="Border Radius Generator" class="image-64"/>
                         </a>
                         <div data-w-id="f91687a9-c21a-d777-9ce9-398e30a97dea" class="div-block-72"></div>
                         <a href="/jeep" class="link-block-7 w-inline-block">
@@ -136,7 +223,7 @@
                         </a>
                         <div data-w-id="f91687a9-c21a-d777-9ce9-398e30a97ded" class="vh-p2">Easily create rounded corners and elliptical shapes for your elements.</div>
                         <a data-w-id="f91687a9-c21a-d777-9ce9-398e30a97de8" href="/jeep" class="w-inline-block">
-                            <img src="https://uploads-ssl.webflow.com/5de9d96149103c44ad9842a0/61d0dc105a116ce37a4b519e_profile2.png" loading="lazy" data-w-id="f91687a9-c21a-d777-9ce9-398e30a97de9" srcset="https://uploads-ssl.webflow.com/5de9d96149103c44ad9842a0/61d0dc105a116ce37a4b519e_profile2-p-500.png 500w, https://uploads-ssl.webflow.com/5de9d96149103c44ad9842a0/61d0dc105a116ce37a4b519e_profile2.png 1302w" sizes="100vw" alt="Jeep" class="image-64"/>
+                            <img src="images/colorgradient.jpg" loading="lazy" data-w-id="f91687a9-c21a-d777-9ce9-398e30a97de9" srcset="images/colorgradient.jpg 500w,images/colorgradient.jpg 1302w" sizes="100vw" alt="Gradient Color Generator" class="image-64"/>
                         </a>
                         <div data-w-id="f91687a9-c21a-d777-9ce9-398e30a97dea" class="div-block-72"></div>
                         <a href="/jeep" class="link-block-7 w-inline-block">
@@ -144,7 +231,7 @@
                         </a>
                         <div data-w-id="f91687a9-c21a-d777-9ce9-398e30a97ded" class="vh-p2">Design beautiful gradient backgrounds for your web pages.</div>
                         <a data-w-id="f91687a9-c21a-d777-9ce9-398e30a97de8" href="/jeep" class="w-inline-block">
-                            <img src="https://uploads-ssl.webflow.com/5de9d96149103c44ad9842a0/61d0dc105a116ce37a4b519e_profile2.png" loading="lazy" data-w-id="f91687a9-c21a-d777-9ce9-398e30a97de9" srcset="https://uploads-ssl.webflow.com/5de9d96149103c44ad9842a0/61d0dc105a116ce37a4b519e_profile2-p-500.png 500w, https://uploads-ssl.webflow.com/5de9d96149103c44ad9842a0/61d0dc105a116ce37a4b519e_profile2.png 1302w" sizes="100vw" alt="Jeep" class="image-64"/>
+                            <img src="images/cursorgenerator.jpg" loading="lazy" data-w-id="f91687a9-c21a-d777-9ce9-398e30a97de9" srcset="images/cursorgenerator.jpg 500w, images/cursorgenerator.jpg 1302w" sizes="100vw" alt="CSS Cursor Generator" class="image-64"/>
                         </a>
                         <div data-w-id="f91687a9-c21a-d777-9ce9-398e30a97dea" class="div-block-72"></div>
                         <a href="/jeep" class="link-block-7 w-inline-block">

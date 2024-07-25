@@ -365,15 +365,15 @@ body {
   margin: 0;
   min-height: 100%;
   background-color: #fff;
-  /* background: linear-gradient(90deg, rgb(0, 234, 255) 0%, rgb(0, 255, 225) 100%); */
   font-family: Arial, sans-serif;
   font-size: 14px;
   line-height: 20px;
   color: #333
 }
-/* .animatedBall{
-  background-color: #00d9ff !important;
-} */
+.navigation{
+  position: sticky;
+  top: 3%;
+}
 .websiteLogo img{
   width: 120px;
   margin-top: -25%;
@@ -7898,9 +7898,7 @@ img {
   position: relative;
   display: block;
   width: 360px;
-  margin: 40px auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  margin: 35px auto;
   clear: none;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
