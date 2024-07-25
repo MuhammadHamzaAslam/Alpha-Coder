@@ -356,7 +356,6 @@ th {
   -moz-box-sizing: border-box;
   box-sizing: border-box
 }
-
 html {
   height: 100%
 }
@@ -370,14 +369,37 @@ body {
   line-height: 20px;
   color: #333
 }
+/* background cursor animation start */
+div.ball{
+  background-color: rgb(255, 0, 0);
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: difference;
+}
+/* background cursor animation end */
+/* navbar styling start */
 .navigation{
   position: sticky;
-  top: 3%;
+  top: 0%;
+  background-color: #ffffff;
+  border-bottom: 1px solid grey;
+  z-index: 99999;
+  padding-top: 1.2%;
+  padding-left: 3%;
+  padding-right: 3%;
+  height: 13vh;
 }
 .websiteLogo img{
-  width: 120px;
+  width: 100px;
   margin-top: -25%;
 }
+/* navbar styling end */
 img {
   max-width: 100%;
   vertical-align: middle;
@@ -6123,11 +6145,6 @@ img {
   justify-content: flex-end;
 }
 
-.navigation {
-  margin-top: 20px;
-  margin-right: 40px;
-  margin-left: 40px;
-}
 
 .columns-17 {
   margin-top: 20px;

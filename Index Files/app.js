@@ -31,23 +31,58 @@ const typeEffect = () => {
 
 typeEffect();
 
-//Bubble Animation\
-document.addEventListener('mousemove', (e) => {
-    let body = document.querySelector('body');
-    let circle = document.createElement('span');
-    circle.setAttribute('class','span')
-    let x = e.offsetX;
-    let y = e.offsetY;
-    circle.style.left = x + 'px';
-    circle.style.top = y + 'px';
-    let size = Math.random() * 100;
-    circle.style.width = 20 + size + 'px';
-    circle.style.height = 20 + size + 'px';
-    body.appendChild(circle);
-    setTimeout(() => {
-        circle.remove();
-    }, 1800);
-});
+
+// cursor follow ball animation start
+const ball = document.querySelector("div.ball");
+
+let mouseX = 0;
+let mouseY = 0;
+
+let ballX = 0;
+let ballY = 0;
+
+let speed = 0.02;
+
+
+function animate(){
+  
+  let distX = mouseX - ballX;
+  let distY = mouseY - ballY;
+  
+  
+  ballX = ballX + (distX * speed);
+  ballY = ballY + (distY * speed);
+  
+  ball.style.left = ballX + "px";
+  ball.style.top = ballY + "px";
+  
+  requestAnimationFrame(animate);
+}
+animate();
+
+document.addEventListener("mousemove", function(event){
+  mouseX = event.pageX;
+  mouseY = event.pageY;
+})
+// cursor follow ball animation end
+
+// //Bubble Animation\
+// document.addEventListener('mousemove', (e) => {
+//     let body = document.querySelector('body');
+//     let circle = document.createElement('span');
+//     circle.setAttribute('class','span')
+//     let x = e.offsetX;
+//     let y = e.offsetY;
+//     circle.style.left = x + 'px';
+//     circle.style.top = y + 'px';
+//     let size = Math.random() * 100;
+//     circle.style.width = 20 + size + 'px';
+//     circle.style.height = 20 + size + 'px';
+//     body.appendChild(circle);
+//     setTimeout(() => {
+//         circle.remove();
+//     }, 1800);
+// });
 
 
 // jquery code
