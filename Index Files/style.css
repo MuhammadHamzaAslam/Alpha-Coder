@@ -370,7 +370,7 @@ body {
   color: #333
 }
 /* background cursor animation start */
-div.ball{
+/* div.ball{
   background-color: rgb(255, 0, 0);
   width: 400px;
   height: 400px;
@@ -381,7 +381,7 @@ div.ball{
   left: 0;
   transform: translate(-50%, -50%);
   mix-blend-mode: difference;
-}
+} */
 /* background cursor animation end */
 /* navbar styling start */
 .navigation{
@@ -391,12 +391,12 @@ div.ball{
   border-bottom: 1px solid grey;
   z-index: 99999;
   padding-top: 1.2%;
-  padding-left: 3%;
-  padding-right: 3%;
-  height: 13vh;
+  padding-left: 2%;
+  padding-right: 2%;
+  height: 12vh;
 }
 .websiteLogo img{
-  width: 100px;
+  width: 90px;
   margin-top: -25%;
 }
 /* navbar styling end */
@@ -9829,7 +9829,14 @@ img {
     margin-top: 192px;
   }
 }
-
+@media(max-width:555px){
+  .v2-h1.homehero{
+    font-size: 20px !important;
+  }
+  .autoText span{
+    font-size: 20px !important;
+  }
+}
 @media screen and (max-width: 991px) {
   .text-block {
     font-weight: 200;

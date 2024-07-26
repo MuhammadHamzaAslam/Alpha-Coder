@@ -33,37 +33,37 @@ typeEffect();
 
 
 // cursor follow ball animation start
-const ball = document.querySelector("div.ball");
+// const ball = document.querySelector("div.ball");
 
-let mouseX = 0;
-let mouseY = 0;
+// let mouseX = 0;
+// let mouseY = 0;
 
-let ballX = 0;
-let ballY = 0;
+// let ballX = 0;
+// let ballY = 0;
 
-let speed = 0.02;
+// let speed = 0.02;
 
 
-function animate(){
+// function animate(){
   
-  let distX = mouseX - ballX;
-  let distY = mouseY - ballY;
+//   let distX = mouseX - ballX;
+//   let distY = mouseY - ballY;
   
   
-  ballX = ballX + (distX * speed);
-  ballY = ballY + (distY * speed);
+//   ballX = ballX + (distX * speed);
+//   ballY = ballY + (distY * speed);
   
-  ball.style.left = ballX + "px";
-  ball.style.top = ballY + "px";
+//   ball.style.left = ballX + "px";
+//   ball.style.top = ballY + "px";
   
-  requestAnimationFrame(animate);
-}
-animate();
+//   requestAnimationFrame(animate);
+// }
+// animate();
 
-document.addEventListener("mousemove", function(event){
-  mouseX = event.pageX;
-  mouseY = event.pageY;
-})
+// document.addEventListener("mousemove", function(event){
+//   mouseX = event.pageX;
+//   mouseY = event.pageY;
+// })
 // cursor follow ball animation end
 
 // //Bubble Animation\
