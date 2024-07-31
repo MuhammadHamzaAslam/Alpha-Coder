@@ -29,7 +29,8 @@ body {
 }
 
 h1 {
-    font-size: 24px;
+    font-size: calc(1.375rem +1.5vw);
+    font-weight: 1000 !important;
     color: #007bff;
     margin-bottom: 20px;
 }
